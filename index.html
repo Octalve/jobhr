@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHR-Octalve</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS Play CDN Script -->
+    <script src="https://cdn.tailwindcss.com">
+
+        // // Toggle mobile menu visibility
+        // document.querySelector('[data-collapse-toggle="mobile-menu-2"]').addEventListener('click', function () {
+        //     const menu = document.getElementById('mobile-menu-2');
+        //     menu.classList.toggle('hidden');
+        // });
+
+    </script>
+
+
+
+
+
+
+    </script>
+    <!-- Font Link -->
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-black">
+    <!-- HEADER + HERO (HTML + Tailwind) -->
+    <header class="bg-[#06060A] text-white">
+        <!-- Nav -->
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="/components/logo/Octalve Leap.png" alt="uifry" class="h-9 w-auto" />
+            </a>
+
+            <!-- Desktop Links -->
+            <ul class="hidden items-center gap-10 text-sm font-medium text-white/80 md:flex">
+                <li><a class="text-[#7367F0]" href="#">Home</a></li>
+                <li><a class="hover:text-white" href="#">About Us</a></li>
+                <li><a class="hover:text-white" href="#">Pricing</a></li>
+                <li><a class="hover:text-white" href="#">Features</a></li>
+            </ul>
+
+            <!-- Desktop CTAs -->
+            <div class="hidden items-center gap-4 md:flex">
+                <a href="#" class="rounded-xl bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold
+                   shadow-[0_14px_34px_rgba(115,103,240,0.30)] transition hover:brightness-110">
+                    Register
+                </a>
+
+                <a href="#" class="rounded-xl border border-[#7367F0] px-10 py-3 text-sm font-semibold text-white
+                   shadow-[0_10px_24px_rgba(0,0,0,0.35)] transition hover:bg-white/5">
+                    Get A Quote
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button
+                class="inline-flex items-center justify-center rounded-lg border border-white/10 p-2 text-white/80 md:hidden"
+                type="button" onclick="document.getElementById('mnav').classList.toggle('hidden')"
+                aria-label="Toggle menu">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mnav" class="hidden border-t border-white/10 md:hidden">
+            <div class="mx-auto max-w-6xl px-6 py-4">
+                <ul class="space-y-3 text-sm font-medium text-white/80">
+                    <li><a class="block text-[#7367F0]" href="#">Home</a></li>
+                    <li><a class="block hover:text-white" href="#">About Us</a></li>
+                    <li><a class="block hover:text-white" href="#">Pricing</a></li>
+                    <li><a class="block hover:text-white" href="#">Features</a></li>
+                </ul>
+
+                <div class="mt-5 flex gap-3">
+                    <a href="#"
+                        class="flex-1 rounded-xl bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-6 py-3 text-center text-sm font-semibold text-white">
+                        Register
+                    </a>
+                    <a href="#"
+                        class="flex-1 rounded-xl border border-[#7367F0] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-white/5">
+                        Get A Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <section class="relative overflow-hidden pb-14 pt-10 sm:pt-14">
+            <!-- subtle glows -->
+            <div class="pointer-events-none absolute inset-0">
+                <div
+                    class="absolute left-1/2 top-1/2 h-[680px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#7367F0]/10 blur-[160px]">
+                </div>
+                <div class="absolute -left-40 top-20 h-[520px] w-[520px] rounded-full bg-white/5 blur-[170px]"></div>
+            </div>
+
+            <div class="relative mx-auto max-w-6xl px-6">
+                <!-- Floating cards + scribbles -->
+                <!-- left card -->
+                <img src="/components/cards/job-card.png" alt=""
+                    class="pointer-events-none absolute left-[-10px] top-[120px] hidden w-[220px] -rotate-12 opacity-90 lg:block" />
+                <!-- right card -->
+                <img src="/components/cards/job-card.png" alt=""
+                    class="pointer-events-none absolute right-[-10px] top-[420px] hidden w-[260px] rotate-12 opacity-90 lg:block" />
+                <!-- small blurred card bottom-left -->
+                <img src="/components/cards/job-card.png" alt=""
+                    class="pointer-events-none absolute left-[40px] top-[560px] hidden w-[110px] -rotate-12 opacity-25 blur-[1px] lg:block" />
+
+                <!-- scribble arrow left -->
+                <svg class="pointer-events-none absolute left-[30px] top-[430px] hidden lg:block" width="180"
+                    height="120" viewBox="0 0 180 120" fill="none">
+                    <path d="M10 95c35 25 80 25 120-10 15-13 25-30 35-55" stroke="white" stroke-opacity=".85"
+                        stroke-width="2.2" stroke-linecap="round" />
+                    <path d="M165 30l-8 7m8-7l-10-2" stroke="white" stroke-opacity=".85" stroke-width="2.2"
+                        stroke-linecap="round" />
+                    <path d="M65 88c10 10 20 10 30 0 10-10 0-20-15-18-13 2-10 18 4 16" stroke="white"
+                        stroke-opacity=".85" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+                <!-- scribble bottom center -->
+                <svg class="pointer-events-none absolute bottom-[-10px] left-1/2 hidden -translate-x-1/2 lg:block"
+                    width="140" height="120" viewBox="0 0 140 120" fill="none">
+                    <path
+                        d="M70 10c-18 10-10 30 6 30 16 0 18-20 3-26-15-6-32 10-14 26 18 16 52 6 46-16-6-22-40-18-34 6 6 24 42 26 42-2"
+                        stroke="white" stroke-opacity=".85" stroke-width="2.2" stroke-linecap="round" />
+                    <path d="M86 102c8-2 16-10 18-18" stroke="white" stroke-opacity=".85" stroke-width="2.2"
+                        stroke-linecap="round" />
+                </svg>
+
+                <!-- Hero content -->
+                <div class="pt-20 text-center sm:pt-24">
+                    <h1
+                        class="text-[44px] font-extrabold leading-[1.05] tracking-tight text-white sm:text-[64px] md:text-[80px]">
+                        One Step Closer To
+                        <span class="block bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent">
+                            Your Dream Job
+                        </span>
+                    </h1>
+
+                    <p class="mx-auto mt-6 max-w-2xl text-sm text-white/70 sm:text-base">
+                        Let Us Help You Find A Job That Suits You The Best!
+                    </p>
+
+                    <div class="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
+                        <a href="#" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-b from-[#B794F4] to-[#7367F0]
+                       px-12 py-4 text-sm font-semibold text-white
+                       shadow-[0_14px_34px_rgba(115,103,240,0.30)] transition hover:brightness-110">
+                            Get Started
+                        </a>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-3 text-sm font-semibold text-white/85 hover:text-white">
+                            <span
+                                class="grid h-11 w-11 place-items-center rounded-xl border border-[#7367F0]/70 bg-white/5">
+                                <!-- play -->
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M8.5 6.8v10.4c0 .7.8 1.1 1.4.7l8.2-5.2c.6-.4.6-1.2 0-1.6L9.9 6.1c-.6-.4-1.4 0-1.4.7Z" />
+                                </svg>
+                            </span>
+                            Our Story
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="mt-16 grid grid-cols-3 gap-6 text-center sm:mt-20 sm:gap-10">
+                        <div>
+                            <p class="text-3xl font-extrabold text-white sm:text-4xl">20M+</p>
+                            <p class="mt-1 text-sm text-white/60">Users</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-white sm:text-4xl">500K+</p>
+                            <p class="mt-1 text-sm text-white/60">Jobs</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-white sm:text-4xl">100+</p>
+                            <p class="mt-1 text-sm text-white/60">Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+
+    <!-- Section Ribbon for company -->
+    <div class="relative overflow-hidden">
+        <!-- Gradient Background -->
+        <div class="bg-gradient-to-r from-purple-400 via-purple-300 to-blue-300 py-4 px-8">
+            <!-- Diagonal Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-transparent via-purple-500/10 to-blue-500/20"></div>
+
+            <!-- Diagonal Stripe Effect -->
+            <div
+                class="absolute top-0 right-0 w-full h-32 bg-gradient-to-bl from-gray-900/30 to-transparent transform -skew-y-3">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-tr from-blue-400/20 to-transparent transform skew-y-2">
+            </div>
+
+            <!-- Logo Container -->
+            <div class="relative z-10 max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center">
+                    <!-- Logo Slot 1 -->
+                    <div
+                        class="w-full flex items-center justify-center p-4 backdrop-blur-sm rounded-lg transition-all duration-300">
+                        <img src="/components/logo/Octalve Leap.png" alt="The Washington Post"
+                            class="max-w-full h-12 object-contain filter brightness-0 invert opacity-90">
+                    </div>
+
+                    <!-- Logo Slot 2 -->
+                    <div
+                        class="w-full flex items-center justify-center p-4 backdrop-blur-sm rounded-lg transition-all duration-300">
+                        <img src="/components/logo/techcruch.png" alt="TechCrunch"
+                            class="max-w-full h-12 object-contain filter brightness-0 invert opacity-90">
+                    </div>
+
+                    <!-- Logo Slot 3 -->
+                    <div
+                        class="w-full flex items-center justify-center p-4 backdrop-blur-sm rounded-lg transition-all duration-300">
+                        <img src="/components/logo/bloomberg.png" alt="Bloomberg"
+                            class="max-w-full h-12 object-contain filter brightness-0 invert opacity-90">
+                    </div>
+
+                    <!-- Logo Slot 4 -->
+                    <div
+                        class="w-full flex items-center justify-center p-4 backdrop-blur-sm rounded-lg transition-all duration-300">
+                        <img src="/components/logo/gizmodo.png" alt="Gizmodo"
+                            class="max-w-full h-12 object-contain filter brightness-0 invert opacity-90">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Work with Exiting Company -->
+
+    <section class="relative overflow-hidden bg-[#06060A]">
+        <!-- subtle background glow (optional, but matches the UI feel) -->
+        <div class="pointer-events-none absolute inset-0">
+            <div
+                class="absolute -left-40 top-1/2 h-[520px] w-[520px] -translate-y-1/2 rounded-full bg-[#7367F0]/20 blur-[120px]">
+            </div>
+            <div class="absolute -right-40 top-1/3 h-[520px] w-[520px] rounded-full bg-white/5 blur-[140px]"></div>
+        </div>
+
+        <div class="relative mx-auto max-w-6xl px-6 py-16 lg:py-24">
+            <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+                <!-- Left: Logo cluster image -->
+                <div class="flex justify-center lg:justify-start">
+                    <img src="./components/music.png" alt="Company logos cluster"
+                        class="w-full max-w-[560px] select-none" draggable="false" />
+                </div>
+
+                <!-- Right: Copy -->
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+                        Work With
+                        <span class="bg-gradient-to-r from-[#B794F4] to-[#7367F0] bg-clip-text text-transparent">
+                            Exciting
+                        </span>
+                        <br />
+                        Companies
+                    </h2>
+
+                    <p class="mt-6 text-base leading-7 text-white/60 sm:text-lg">
+                        Et In Sapien Enim Congue Interdum Pulvinar Non Sed.<br />
+                        Ac Augue Netus Tellus Semper.
+                    </p>
+
+                    <button class="mt-10 inline-flex items-center justify-center rounded-xl bg-gradient-to-b from-[#B794F4] to-[#7367F0]
+                 px-12 py-4 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(115,103,240,0.35)]
+                 transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Jobs Section -->
+
+
+    <section class="bg-[#06060A] py-20">
+        <div class="mx-auto max-w-6xl px-6">
+            <!-- Header -->
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                    Newest <span class="text-[#7367F0]">Jobs</span> For You
+                </h2>
+                <p class="mx-auto mt-4 max-w-2xl text-sm text-white/60 sm:text-base">
+                    Get The Fastest Application So That Your Name Is Above Other Application
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <nav class="mt-10">
+                <ul class="flex flex-wrap justify-center gap-10 text-sm">
+                    <li>
+                        <a href="#" class="relative font-semibold text-white">
+                            All Recent
+                            <span class="absolute -bottom-3 left-0 h-[2px] w-full bg-[#7367F0]"></span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="text-white/50 hover:text-white/80">Finance</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white/80">Development</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white/80">Marketing</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white/80">Specialist</a></li>
+                </ul>
+            </nav>
+
+            <!-- Cards Grid -->
+            <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card -->
+                <article class="relative overflow-hidden rounded-xl border border-white/10 bg-[#0E0E12] p-6">
+                    <!-- subtle pattern -->
+                    <div class="pointer-events-none absolute inset-0 opacity-60">
+                        <div class="absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+                        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#7367F0]/10 blur-3xl"></div>
+                    </div>
+
+                    <div class="relative">
+                        <!-- chips -->
+                        <div class="flex gap-4">
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Fulltime</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Onsite</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">$200K</span>
+                        </div>
+
+                        <!-- title -->
+                        <h3 class="mt-8 text-xl font-bold text-white">UX Designer</h3>
+                        <p class="mt-2 text-sm text-white/55">Advoit Digital Agency</p>
+
+                        <!-- footer -->
+                        <div class="mt-10 flex items-center justify-between">
+                            <button class="rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white
+                     shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110
+                     focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">
+                                Apply
+                            </button>
+
+                            <div class="flex items-center gap-2 text-sm font-semibold text-white/70">
+                                <!-- users icon -->
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6.5 19.5c.6-2.7 3-4.5 6.5-4.5s5.9 1.8 6.5 4.5" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" />
+                                    <path d="M7.5 11.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="currentColor"
+                                        stroke-width="1.2" opacity=".8" />
+                                    <path d="M2 19c.4-1.9 2-3.2 4.4-3.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" opacity=".8" />
+                                </svg>
+                                <span>24 Applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Duplicate cards (same UI) -->
+                <article class="relative overflow-hidden rounded-xl border border-white/10 bg-[#0E0E12] p-6">
+                    <div class="pointer-events-none absolute inset-0 opacity-60">
+                        <div class="absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+                        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#7367F0]/10 blur-3xl"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex gap-4">
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Fulltime</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Onsite</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">$200K</span>
+                        </div>
+                        <h3 class="mt-8 text-xl font-bold text-white">UX Designer</h3>
+                        <p class="mt-2 text-sm text-white/55">Advoit Digital Agency</p>
+                        <div class="mt-10 flex items-center justify-between">
+                            <button
+                                class="rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">Apply</button>
+                            <div class="flex items-center gap-2 text-sm font-semibold text-white/70">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6.5 19.5c.6-2.7 3-4.5 6.5-4.5s5.9 1.8 6.5 4.5" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" />
+                                    <path d="M7.5 11.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="currentColor"
+                                        stroke-width="1.2" opacity=".8" />
+                                    <path d="M2 19c.4-1.9 2-3.2 4.4-3.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" opacity=".8" />
+                                </svg>
+                                <span>24 Applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="relative overflow-hidden rounded-xl border border-white/10 bg-[#0E0E12] p-6">
+                    <div class="pointer-events-none absolute inset-0 opacity-60">
+                        <div class="absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+                        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#7367F0]/10 blur-3xl"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex gap-4">
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Fulltime</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Onsite</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">$200K</span>
+                        </div>
+                        <h3 class="mt-8 text-xl font-bold text-white">UX Designer</h3>
+                        <p class="mt-2 text-sm text-white/55">Advoit Digital Agency</p>
+                        <div class="mt-10 flex items-center justify-between">
+                            <button
+                                class="rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">Apply</button>
+                            <div class="flex items-center gap-2 text-sm font-semibold text-white/70">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6.5 19.5c.6-2.7 3-4.5 6.5-4.5s5.9 1.8 6.5 4.5" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" />
+                                    <path d="M7.5 11.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="currentColor"
+                                        stroke-width="1.2" opacity=".8" />
+                                    <path d="M2 19c.4-1.9 2-3.2 4.4-3.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" opacity=".8" />
+                                </svg>
+                                <span>24 Applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="relative overflow-hidden rounded-xl border border-white/10 bg-[#0E0E12] p-6">
+                    <div class="pointer-events-none absolute inset-0 opacity-60">
+                        <div class="absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+                        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#7367F0]/10 blur-3xl"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex gap-4">
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Fulltime</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Onsite</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">$200K</span>
+                        </div>
+                        <h3 class="mt-8 text-xl font-bold text-white">UX Designer</h3>
+                        <p class="mt-2 text-sm text-white/55">Advoit Digital Agency</p>
+                        <div class="mt-10 flex items-center justify-between">
+                            <button
+                                class="rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">Apply</button>
+                            <div class="flex items-center gap-2 text-sm font-semibold text-white/70">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6.5 19.5c.6-2.7 3-4.5 6.5-4.5s5.9 1.8 6.5 4.5" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" />
+                                    <path d="M7.5 11.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="currentColor"
+                                        stroke-width="1.2" opacity=".8" />
+                                    <path d="M2 19c.4-1.9 2-3.2 4.4-3.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" opacity=".8" />
+                                </svg>
+                                <span>24 Applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="relative overflow-hidden rounded-xl border border-white/10 bg-[#0E0E12] p-6">
+                    <div class="pointer-events-none absolute inset-0 opacity-60">
+                        <div class="absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+                        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#7367F0]/10 blur-3xl"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex gap-4">
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Fulltime</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Onsite</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">$200K</span>
+                        </div>
+                        <h3 class="mt-8 text-xl font-bold text-white">UX Designer</h3>
+                        <p class="mt-2 text-sm text-white/55">Advoit Digital Agency</p>
+                        <div class="mt-10 flex items-center justify-between">
+                            <button
+                                class="rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">Apply</button>
+                            <div class="flex items-center gap-2 text-sm font-semibold text-white/70">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6.5 19.5c.6-2.7 3-4.5 6.5-4.5s5.9 1.8 6.5 4.5" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" />
+                                    <path d="M7.5 11.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="currentColor"
+                                        stroke-width="1.2" opacity=".8" />
+                                    <path d="M2 19c.4-1.9 2-3.2 4.4-3.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" opacity=".8" />
+                                </svg>
+                                <span>24 Applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="relative overflow-hidden rounded-xl border border-white/10 bg-[#0E0E12] p-6">
+                    <div class="pointer-events-none absolute inset-0 opacity-60">
+                        <div class="absolute -right-24 -bottom-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+                        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#7367F0]/10 blur-3xl"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex gap-4">
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Fulltime</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">Onsite</span>
+                            <span
+                                class="rounded-lg border border-white/30 px-6 py-2 text-xs font-medium text-white/70">$200K</span>
+                        </div>
+                        <h3 class="mt-8 text-xl font-bold text-white">UX Designer</h3>
+                        <p class="mt-2 text-sm text-white/55">Advoit Digital Agency</p>
+                        <div class="mt-10 flex items-center justify-between">
+                            <button
+                                class="rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">Apply</button>
+                            <div class="flex items-center gap-2 text-sm font-semibold text-white/70">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6.5 19.5c.6-2.7 3-4.5 6.5-4.5s5.9 1.8 6.5 4.5" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" />
+                                    <path d="M7.5 11.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" stroke="currentColor"
+                                        stroke-width="1.2" opacity=".8" />
+                                    <path d="M2 19c.4-1.9 2-3.2 4.4-3.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" opacity=".8" />
+                                </svg>
+                                <span>24 Applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Explore By Categories -->
+    <section class="bg-[#06060A] py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-5 sm:px-6">
+            <!-- Header -->
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                    Explore By <span class="text-[#7367F0]">Categories</span>
+                </h2>
+                <p class="mx-auto mt-4 max-w-2xl text-sm text-white/60 sm:text-base">
+                    Nulla Eget Aliquet Tincidunt Ut Turpis Varius.
+                </p>
+            </div>
+
+            <!-- Content -->
+            <div class="mt-12 grid gap-8 lg:grid-cols-12 lg:gap-10">
+                <!-- Left: Popular Categories -->
+                <div class="lg:col-span-5">
+                    <div class="rounded-2xl border border-white/10 bg-[#0E0E12] p-7 sm:p-8">
+                        <h3 class="text-2xl font-bold text-white">Popular Categories</h3>
+
+                        <div class="mt-8 space-y-6">
+                            <!-- Row -->
+                            <div class="flex items-center justify-between">
+                                <p class="text-white/80">System analyst</p>
+                                <span
+                                    class="grid h-10 w-10 place-items-center rounded-full bg-[#7367F0] text-sm font-bold text-white">
+                                    6
+                                </span>
+                            </div>
+                            <div class="h-px w-full bg-white/10"></div>
+
+                            <div class="flex items-center justify-between">
+                                <p class="text-white/80">Frontend developer</p>
+                                <span
+                                    class="grid h-10 w-10 place-items-center rounded-full bg-white text-sm font-bold text-[#0E0E12]">
+                                    12
+                                </span>
+                            </div>
+                            <div class="h-px w-full bg-[#7367F0]/35"></div>
+
+                            <div class="flex items-center justify-between">
+                                <p class="text-white/80">Backend developer</p>
+                                <span
+                                    class="grid h-10 w-10 place-items-center rounded-full bg-[#7367F0] text-sm font-bold text-white">
+                                    14
+                                </span>
+                            </div>
+                            <div class="h-px w-full bg-white/10"></div>
+
+                            <div class="flex items-center justify-between">
+                                <p class="text-white/80">Full Stack developer</p>
+                                <span
+                                    class="grid h-10 w-10 place-items-center rounded-full bg-white text-sm font-bold text-[#0E0E12]">
+                                    8
+                                </span>
+                            </div>
+                            <div class="h-px w-full bg-[#7367F0]/35"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Category Cards -->
+                <div class="lg:col-span-7">
+                    <div class="grid gap-6 sm:grid-cols-2">
+                        <!-- Card -->
+                        <a href="#"
+                            class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-[#0E0E12] p-6 transition hover:border-white/20">
+                            <span
+                                class="grid h-14 w-14 place-items-center rounded-full bg-white/5 ring-1 ring-white/10">
+                                <!-- icon -->
+                                <svg class="h-6 w-6 text-[#B794F4]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M4 7h16v12H4V7Z" stroke="currentColor" stroke-width="1.8" />
+                                    <path d="M7 14l2-2 3 3 3-4 2 3" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <p class="text-base font-semibold text-white/85 leading-snug">
+                                Arts Media or<br />Communication
+                            </p>
+                        </a>
+
+                        <!-- Card -->
+                        <a href="#"
+                            class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-[#0E0E12] p-6 transition hover:border-white/20">
+                            <span
+                                class="grid h-14 w-14 place-items-center rounded-full bg-white/5 ring-1 ring-white/10">
+                                <!-- icon -->
+                                <svg class="h-6 w-6 text-[#B794F4]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" />
+                                    <path d="M7.5 13.5l-2 2" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" />
+                                    <path d="M16.5 13.5l2 2" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <p class="text-base font-semibold text-white/85 leading-snug">
+                                Human<br />Resources
+                            </p>
+                        </a>
+
+                        <!-- Highlight Card -->
+                        <a href="#"
+                            class="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-[#B794F4] to-[#7367F0] p-6 sm:col-span-1">
+                            <div class="flex items-center gap-5">
+                                <span
+                                    class="grid h-14 w-14 place-items-center rounded-full bg-white shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
+                                    <!-- briefcase icon -->
+                                    <svg class="h-6 w-6 text-[#0E0E12]" viewBox="0 0 24 24" fill="none"
+                                        aria-hidden="true">
+                                        <path d="M9 7V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1" stroke="currentColor"
+                                            stroke-width="1.8" />
+                                        <path d="M4 9h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9Z" stroke="currentColor"
+                                            stroke-width="1.8" />
+                                        <path d="M9 12h6" stroke="currentColor" stroke-width="1.8"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+
+                                <p class="text-base font-semibold text-white leading-snug">
+                                    Business<br />Development
+                                </p>
+                            </div>
+
+                            <!-- soft glow -->
+                            <div
+                                class="pointer-events-none absolute -right-16 -bottom-16 h-56 w-56 rounded-full bg-white/20 blur-3xl">
+                            </div>
+                        </a>
+
+                        <!-- Card -->
+                        <a href="#"
+                            class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-[#0E0E12] p-6 transition hover:border-white/20">
+                            <span
+                                class="grid h-14 w-14 place-items-center rounded-full bg-white/5 ring-1 ring-white/10">
+                                <!-- icon -->
+                                <svg class="h-6 w-6 text-[#B794F4]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                    <path d="M5 21c.8-3.7 4-6 7-6s6.2 2.3 7 6" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <p class="text-base font-semibold text-white/85 leading-snug">
+                                Financial<br />Accounting
+                            </p>
+                        </a>
+
+                        <!-- Button (under left column like the UI; full-width on mobile) -->
+                        <div class="sm:col-span-1">
+                            <button class="mt-2 inline-flex w-full items-center justify-center rounded-xl
+                     bg-gradient-to-b from-[#B794F4] to-[#7367F0]
+                     px-10 py-4 text-sm font-semibold text-white
+                     shadow-[0_14px_34px_rgba(115,103,240,0.30)]
+                     transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35
+                     sm:w-[260px]">
+                                Get Started
+                            </button>
+                        </div>
+
+                        <!-- spacer to keep layout balanced on sm+ (optional) -->
+                        <div class="hidden sm:block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Partner -->
+    <section class="py-1">
+        <div class="container mx-auto px-4">
+            <!-- <section class="bg-[#06060A] py-16 sm:py-20">
+                <div class="mx-auto max-w-6xl px-5 sm:px-6"> -->
+            <!-- Header -->
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                    Work with exciting 100+ <span class="text-[#7367F0]">companies</span>
+                    in the world </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos -->
+
+    <section class="bg-[#06060A] py-14 sm:py-4">
+        <div class="mx-auto max-w-6xl px-6">
+            <div class="mt-10 flex flex-wrap items-center justify-center gap-x-14 gap-y-8 sm:mt-12">
+                <img src="./components/partners/opentable.png" alt="Opentable"
+                    class="h-9 w-auto opacity-90 grayscale transition hover:opacity-100 hover:grayscale-0" />
+
+                <img src="./components/partners/shopify.png" alt="Shopify"
+                    class="h-9 w-auto opacity-90 grayscale transition hover:opacity-100 hover:grayscale-0" />
+
+                <img src="./components/partners/slack.png" alt="Slack"
+                    class="h-9 w-auto opacity-90 grayscale transition hover:opacity-100 hover:grayscale-0" />
+
+                <img src="./components/partners/amazon.png" alt="Amazon"
+                    class="h-9 w-auto opacity-90 grayscale transition hover:opacity-100 hover:grayscale-0" />
+
+                <img src="./components/partners/hubspot.png" alt="HubSpot"
+                    class="h-10 w-auto opacity-90 grayscale transition hover:opacity-100 hover:grayscale-0" />
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Work with Exiting Company -->
+
+    <section class="relative overflow-hidden bg-[#06060A]">
+        <!-- subtle background glow (optional, but matches the UI feel) -->
+        <div class="pointer-events-none absolute inset-0">
+            <div
+                class="absolute -left-40 top-1/2 h-[520px] w-[520px] -translate-y-1/2 rounded-full bg-[#7367F0]/20 blur-[120px]">
+            </div>
+            <div class="absolute -right-40 top-1/3 h-[520px] w-[520px] rounded-full bg-white/5 blur-[140px]"></div>
+        </div>
+
+        <div class="relative mx-auto max-w-6xl px-6 py-16 lg:py-24">
+            <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+                <!-- Left: Logo cluster image -->
+                <div class="flex justify-center lg:justify-start">
+                    <img src="./components/sample.png" alt="Company logos cluster"
+                        class="w-full max-w-[560px] select-none" draggable="false" />
+                </div>
+
+                <!-- Right: Copy -->
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+                        Always get the
+                        <span class="bg-gradient-to-r from-[#B794F4] to-[#7367F0] bg-clip-text text-transparent">
+                            latest
+                        </span>
+                        <br />
+                        information
+                    </h2>
+
+                    <p class="mt-6 text-base leading-7 text-white/60 sm:text-lg">
+                        Et In Sapien Enim Congue Interdum Pulvinar Non Sed.<br />
+                        Ac Augue Netus Tellus Semper.
+                    </p>
+
+                    <form action="">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input
+                            class="mt-6 w-full rounded-lg border border-white/10 bg-[#0E0E12] px-5 py-3 text-white      
+                        placeholder-white/50 focus:border-[#7367F0] focus:outline-none focus:ring-4 focus:ring-[#7367F0]/20 sm:text-sm"
+                            placeholder="Enter your email" />
+
+                        <button type="submit" class="mt-4 w-full rounded-lg bg-gradient-to-b from-[#B794F4] to-[#7367F0] px-10 py-3 text-sm font-semibold text-white      
+                        shadow-[0_14px_30px_rgba(115,103,240,0.28)] transition hover:brightness-110
+                        focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35 sm:mt-6 sm:w-auto sm:px-16">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Engaged Section (HTML + Tailwind, Mobile Friendly) -->
+
+
+    <section class="relative overflow-hidden bg-[#06060A] py-16 sm:py-20">
+        <!-- soft glow (optional, matches UI vibe) -->
+        <div class="pointer-events-none absolute inset-0">
+            <div
+                class="absolute -right-40 top-1/2 h-[520px] w-[520px] -translate-y-1/2 rounded-full bg-[#7367F0]/15 blur-[140px]">
+            </div>
+            <div class="absolute -left-40 top-1/3 h-[520px] w-[520px] rounded-full bg-white/5 blur-[160px]"></div>
+        </div>
+
+        <div class="relative mx-auto max-w-6xl px-6">
+            <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+                <!-- Left: Copy -->
+                <div class="text-center lg:text-left">
+                    <h2 class="text-4xl font-extrabold leading-loose tracking-tight text-white sm:text-5xl">
+                        So Many People Are
+                        <span class="text-[#7367F0]">Engaged</span><br />
+                        All Over The World
+                    </h2>
+
+                    <p class="mx-auto mt-6 max-w-xl text-base leading-7 text-white/60 lg:mx-0 sm:text-lg">
+                        Et In Sapien Enim Congue Interdum Pulvinar Non Sed.<br />
+                        Ac Augue Netus Tellus Semper.
+                    </p>
+
+                    <div class="mt-10 flex justify-center lg:justify-start">
+                        <button class="inline-flex items-center justify-center rounded-xl
+                   bg-gradient-to-b from-[#B794F4] to-[#7367F0]
+                   px-12 py-4 text-sm font-semibold text-white
+                   shadow-[0_14px_34px_rgba(115,103,240,0.30)]
+                   transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-[#7367F0]/35">
+                            Post A Job
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-center lg:justify-start">
+                    <img src="./components/Word client.png" alt="Company logos cluster"
+                        class="w-full max-w-[560px] select-none" draggable="false" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <!-- <div class="flex justify-center lg:justify-end">
+                    <div class="relative aspect-square w-full max-w-[420px] sm:max-w-[520px]"> -->
+    <!-- Dotted orbit rings -->
+    <!-- <svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 100" aria-hidden="true">
+                            <circle cx="50" cy="50" r="44" fill="none" stroke="#7367F0" stroke-opacity="0.85"
+                                stroke-width="1" stroke-linecap="round" stroke-dasharray="2 6" />
+                            <circle cx="50" cy="50" r="26" fill="none" stroke="#7367F0" stroke-opacity="0.85"
+                                stroke-width="1" stroke-linecap="round" stroke-dasharray="2 6" />
+                        </svg> -->
+
+
+    <!-- <img src="./components/avatars/a1.png" alt="User" class="absolute left-1/2 top-[3%] h-14 w-14 -translate-x-1/2 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-16 sm:w-16" /> -->
+    <!-- Right -->
+    <!-- <img src="./components/avatars/a5.png" alt="User" class="absolute right-[3%] top-[33%] h-12 w-12 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-14 sm:w-14" /> -->
+    <!-- Bottom-right -->
+    <!-- <img src="./components/avatars/a3.png" alt="User" class="absolute bottom-[10%] right-[18%] h-12 w-12 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-14 sm:w-14" /> -->
+    <!-- Bottom-left -->
+    <!-- <img src="./components/avatars/a4.png" alt="User" class="absolute bottom-[18%] left-[20%] h-12 w-12 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-14 sm:w-14" /> -->
+    <!-- Left -->
+    <!-- <img src="./components/avatars/a5.png" alt="User" class="absolute left-[6%] top-[38%] h-12 w-12 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-14 sm:w-14" />
+
+                        <img src="./components/avatars/a6.png" alt="User" class="absolute left-1/2 top-[22%] h-11 w-11 -translate-x-1/2 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-12 sm:w-12" /> -->
+    <!-- Inner left-bottom -->
+    <!-- <img src="./components/avatars/a7.png" alt="User" class="absolute left-[30%] top-[56%] h-11 w-11 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-12 sm:w-12" /> -->
+    <!-- Inner right-bottom -->
+    <!-- <img src="./components/avatars/a8.png" alt="User" class="absolute right-[28%] top-[58%] h-11 w-11 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-lg sm:h-12 sm:w-12" /> -->
+
+    <!-- Center avatar -->
+    <!-- <img src="./components/avatars/a1.png" alt="User" class="absolute left-1/2 top-1/2 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover
+                   ring-4 ring-[#06060A] shadow-xl sm:h-16 sm:w-16" />
+                    </div> -->
+    <!-- </div>
+    </div>
+    </div>
+    </section> -->
+
+
+    <!-- Footer (HTML + Tailwind) -->
+    <footer class="bg-[#06060A]">
+        <div class="mx-auto max-w-6xl px-6 py-12">
+            <!-- Top row -->
+            <div class="grid items-center gap-10 text-center md:grid-cols-3 md:text-left">
+                <!-- Logo -->
+                <div class="flex justify-center md:justify-start">
+                    <!-- Use demo directory for the logo -->
+                    <img src="/components/logo/Octalve Leap.png" alt="uifry" class="h-10 w-auto" />
+                </div>
+
+                <!-- Social -->
+                <div class="text-center">
+                    <p class="text-sm font-semibold text-white/90">Find Us On Social Media:</p>
+
+                    <div class="mt-4 flex items-center justify-center gap-4">
+                        <!-- Facebook -->
+                        <a href="#" aria-label="Facebook"
+                            class="grid h-10 w-10 place-items-center rounded-full border border-white/25 text-white/90 transition hover:border-white/40 hover:text-white">
+                            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.3-1.6 1.7-1.6H16.8V4.8c-.3 0-1.4-.1-2.7-.1-2.7 0-4.6 1.6-4.6 4.7V11H7v3h2.5v8h4z" />
+                            </svg>
+                        </a>
+
+                        <!-- X / Twitter -->
+                        <a href="#" aria-label="X"
+                            class="grid h-10 w-10 place-items-center rounded-full border border-white/25 text-white/90 transition hover:border-white/40 hover:text-white">
+                            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M18.9 2H22l-6.8 7.8L23 22h-6.8l-5.3-6.6L5.1 22H2l7.3-8.4L1 2h7l4.8 6.1L18.9 2Zm-1.2 18h1.8L7.2 3.9H5.3L17.7 20Z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" aria-label="Instagram"
+                            class="grid h-10 w-10 place-items-center rounded-full border border-white/25 text-white/90 transition hover:border-white/40 hover:text-white">
+                            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true">
+                                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z"
+                                    stroke="currentColor" stroke-width="1.8" />
+                                <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor"
+                                    stroke-width="1.8" />
+                                <path d="M17.5 6.6h.01" stroke="currentColor" stroke-width="2.4"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="text-center md:text-right">
+                    <p class="text-sm font-semibold text-white/90">We’re Always Happy To Help</p>
+                    <a href="mailto:uifry@gmail.com" class="mt-2 block text-base font-bold text-white">
+                        uifry@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="mt-10 h-px w-full bg-white/15"></div>
+
+            <!-- Bottom row -->
+            <p class="mt-8 text-center text-base font-semibold text-white/90">
+                Copyright © 2022 uifry
+            </p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
